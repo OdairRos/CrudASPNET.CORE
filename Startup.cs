@@ -9,6 +9,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
+using CrudASPNEW.CORE.Data;
 
 namespace CrudASPNEW.CORE
 {
@@ -33,6 +35,10 @@ namespace CrudASPNEW.CORE
 
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+
+            services.AddDbContext<CrudASPNEWCOREContext>(options =>
+                    options.UseSqlServer(Configuration.GetConnectionString("CrudASPNEWCOREContext"), builder =>
+                        builder.MigrationsAssembly("CrudASPNEWCOREContext")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
