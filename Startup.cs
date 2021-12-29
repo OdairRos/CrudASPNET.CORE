@@ -37,8 +37,8 @@ namespace CrudASPNEW.CORE
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
 
             services.AddDbContext<CrudASPNEWCOREContext>(options =>
-                    options.UseSqlServer(Configuration.GetConnectionString("CrudASPNEWCOREContext"), builder =>
-                        builder.MigrationsAssembly("CrudASPNEWCOREContext")));
+                    options.UseSqlServer(Configuration.GetConnectionString("CrudASPNEWCOREContext")));
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

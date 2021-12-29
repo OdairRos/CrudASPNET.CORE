@@ -34,7 +34,7 @@ namespace CrudASPNEW.CORE.Controllers
             }
 
             var department = await _context.Department
-                .FirstOrDefaultAsync(m => m.id == id);
+                .FirstOrDefaultAsync(m => m.Id == id);
             if (department == null)
             {
                 return NotFound();
@@ -88,11 +88,10 @@ namespace CrudASPNEW.CORE.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, [Bind("id,nome")] Department department)
         {
-            if (id != department.id)
+            if (id != department.   Id)
             {
                 return NotFound();
-            }
-
+            } 
             if (ModelState.IsValid)
             {
                 try
@@ -102,7 +101,7 @@ namespace CrudASPNEW.CORE.Controllers
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!DepartmentExists(department.id))
+                    if (!DepartmentExists(department.Id))
                     {
                         return NotFound();
                     }
@@ -125,7 +124,7 @@ namespace CrudASPNEW.CORE.Controllers
             }
 
             var department = await _context.Department
-                .FirstOrDefaultAsync(m => m.id == id);
+                .FirstOrDefaultAsync(m => m.Id == id);
             if (department == null)
             {
                 return NotFound();
@@ -147,7 +146,7 @@ namespace CrudASPNEW.CORE.Controllers
 
         private bool DepartmentExists(int id)
         {
-            return _context.Department.Any(e => e.id == id);
+            return _context.Department.Any(e => e.Id == id);
         }
     }
 }
