@@ -1,6 +1,6 @@
 using System;
 
-namespace CrudASPNEW.CORE.Models
+namespace CrudASPNEW.CORE.Models.ViewModels
 {
     public class ErrorViewModel
     {
