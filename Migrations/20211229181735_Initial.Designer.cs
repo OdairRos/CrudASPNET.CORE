@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CrudASPNEW.CORE.Migrations
 {
     [DbContext(typeof(CrudASPNEWCOREContext))]
-    [Migration("20211229182004_Initial")]
+    [Migration("20211229181735_Initial")]
     partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -20,7 +20,7 @@ namespace CrudASPNEW.CORE.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-            modelBuilder.Entity("CrudASPNEW.CORE.Models.Department", b =>
+            modelBuilder.Entity("CrudASPNEW.CORE.Models.Depa", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -30,7 +30,7 @@ namespace CrudASPNEW.CORE.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Department");
+                    b.ToTable("Depa");
                 });
 #pragma warning restore 612, 618
         }

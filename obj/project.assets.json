@@ -1613,18 +1613,6 @@
           "lib/netstandard1.3/Microsoft.CodeAnalysis.Workspaces.dll": {}
         }
       },
-      "Microsoft.CodeDom.Providers.DotNetCompilerPlatform/3.6.0": {
-        "type": "package",
-        "compile": {
-          "lib/net45/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll": {}
-        },
-        "runtime": {
-          "lib/net45/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll": {}
-        },
-        "build": {
-          "build/net46/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.targets": {}
-        }
-      },
       "Microsoft.CSharp/4.5.0": {
         "type": "package",
         "compile": {
@@ -2763,15 +2751,6 @@
           }
         }
       },
-      "MySqlConnector/0.42.1": {
-        "type": "package",
-        "compile": {
-          "lib/netcoreapp2.1/MySqlConnector.dll": {}
-        },
-        "runtime": {
-          "lib/netcoreapp2.1/MySqlConnector.dll": {}
-        }
-      },
       "NETStandard.Library/2.0.3": {
         "type": "package",
         "dependencies": {
@@ -2843,35 +2822,6 @@
         },
         "runtime": {
           "lib/netstandard1.3/Pomelo.EntityFrameworkCore.Lolita.SqlServer.dll": {}
-        }
-      },
-      "Pomelo.EntityFrameworkCore.MySql/2.1.1": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.EntityFrameworkCore.Design": "2.1.1",
-          "Microsoft.EntityFrameworkCore.Relational": "2.1.1",
-          "Microsoft.Extensions.Logging.Console": "2.1.1",
-          "MySqlConnector": "0.42.1",
-          "Pomelo.JsonObject": "1.1.1"
-        },
-        "compile": {
-          "lib/netstandard2.0/Pomelo.EntityFrameworkCore.MySql.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/Pomelo.EntityFrameworkCore.MySql.dll": {}
-        }
-      },
-      "Pomelo.JsonObject/1.1.1": {
-        "type": "package",
-        "dependencies": {
-          "NETStandard.Library": "1.6.1",
-          "Newtonsoft.Json": "9.0.1"
-        },
-        "compile": {
-          "lib/netstandard1.3/Pomelo.JsonObject.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard1.3/Pomelo.JsonObject.dll": {}
         }
       },
       "Remotion.Linq/2.2.0": {
@@ -6067,148 +6017,6 @@
         "microsoft.codeanalysis.workspaces.common.nuspec"
       ]
     },
-    "Microsoft.CodeDom.Providers.DotNetCompilerPlatform/3.6.0": {
-      "sha512": "Wxo1vjgqJDawdtSBYegfe7fqUfdKn5vMtAMgHHxjV5rW9rSyQZMQ5t0YTCxyQ/IUyAOoUkrHMVXNLCdqAtH72w==",
-      "type": "package",
-      "path": "microsoft.codedom.providers.dotnetcompilerplatform/3.6.0",
-      "hasTools": true,
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "build/net45/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.Extensions.targets",
-        "build/net45/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.targets",
-        "build/net46/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.Extensions.targets",
-        "build/net46/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.targets",
-        "build/net472/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.Extensions.targets",
-        "build/net472/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.targets",
-        "content/net45/app.config.install.xdt",
-        "content/net45/app.config.uninstall.xdt",
-        "content/net45/web.config.install.xdt",
-        "content/net45/web.config.uninstall.xdt",
-        "content/net46/app.config.install.xdt",
-        "content/net46/app.config.uninstall.xdt",
-        "content/net46/web.config.install.xdt",
-        "content/net46/web.config.uninstall.xdt",
-        "content/net472/app.config.install.xdt",
-        "content/net472/app.config.uninstall.xdt",
-        "content/net472/web.config.install.xdt",
-        "content/net472/web.config.uninstall.xdt",
-        "lib/net45/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll",
-        "lib/net45/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml",
-        "microsoft.codedom.providers.dotnetcompilerplatform.3.6.0.nupkg.sha512",
-        "microsoft.codedom.providers.dotnetcompilerplatform.nuspec",
-        "tasks/DotNetCompilerPlatformTasks.dll",
-        "tasks/System.Management.dll",
-        "tools/Roslyn45/Microsoft.Build.Tasks.CodeAnalysis.dll",
-        "tools/Roslyn45/Microsoft.CSharp.Core.targets",
-        "tools/Roslyn45/Microsoft.CodeAnalysis.CSharp.Scripting.dll",
-        "tools/Roslyn45/Microsoft.CodeAnalysis.CSharp.dll",
-        "tools/Roslyn45/Microsoft.CodeAnalysis.Scripting.dll",
-        "tools/Roslyn45/Microsoft.CodeAnalysis.VisualBasic.dll",
-        "tools/Roslyn45/Microsoft.CodeAnalysis.dll",
-        "tools/Roslyn45/Microsoft.DiaSymReader.Native.amd64.dll",
-        "tools/Roslyn45/Microsoft.DiaSymReader.Native.x86.dll",
-        "tools/Roslyn45/Microsoft.VisualBasic.Core.targets",
-        "tools/Roslyn45/System.AppContext.dll",
-        "tools/Roslyn45/System.Collections.Immutable.dll",
-        "tools/Roslyn45/System.Diagnostics.StackTrace.dll",
-        "tools/Roslyn45/System.IO.FileSystem.Primitives.dll",
-        "tools/Roslyn45/System.IO.FileSystem.dll",
-        "tools/Roslyn45/System.Reflection.Metadata.dll",
-        "tools/Roslyn45/VBCSCompiler.exe",
-        "tools/Roslyn45/VBCSCompiler.exe.config",
-        "tools/Roslyn45/csc.exe",
-        "tools/Roslyn45/csc.exe.config",
-        "tools/Roslyn45/csc.rsp",
-        "tools/Roslyn45/csi.exe",
-        "tools/Roslyn45/csi.rsp",
-        "tools/Roslyn45/vbc.exe",
-        "tools/Roslyn45/vbc.exe.config",
-        "tools/Roslyn45/vbc.rsp",
-        "tools/Roslyn46/Microsoft.Build.Tasks.CodeAnalysis.dll",
-        "tools/Roslyn46/Microsoft.CSharp.Core.targets",
-        "tools/Roslyn46/Microsoft.CodeAnalysis.CSharp.Scripting.dll",
-        "tools/Roslyn46/Microsoft.CodeAnalysis.CSharp.dll",
-        "tools/Roslyn46/Microsoft.CodeAnalysis.Scripting.dll",
-        "tools/Roslyn46/Microsoft.CodeAnalysis.VisualBasic.dll",
-        "tools/Roslyn46/Microsoft.CodeAnalysis.dll",
-        "tools/Roslyn46/Microsoft.DiaSymReader.Native.amd64.dll",
-        "tools/Roslyn46/Microsoft.DiaSymReader.Native.x86.dll",
-        "tools/Roslyn46/Microsoft.Managed.Core.targets",
-        "tools/Roslyn46/Microsoft.VisualBasic.Core.targets",
-        "tools/Roslyn46/Microsoft.Win32.Primitives.dll",
-        "tools/Roslyn46/System.AppContext.dll",
-        "tools/Roslyn46/System.Collections.Immutable.dll",
-        "tools/Roslyn46/System.Console.dll",
-        "tools/Roslyn46/System.Diagnostics.DiagnosticSource.dll",
-        "tools/Roslyn46/System.Diagnostics.FileVersionInfo.dll",
-        "tools/Roslyn46/System.Diagnostics.StackTrace.dll",
-        "tools/Roslyn46/System.Globalization.Calendars.dll",
-        "tools/Roslyn46/System.IO.Compression.ZipFile.dll",
-        "tools/Roslyn46/System.IO.Compression.dll",
-        "tools/Roslyn46/System.IO.FileSystem.Primitives.dll",
-        "tools/Roslyn46/System.IO.FileSystem.dll",
-        "tools/Roslyn46/System.Net.Http.dll",
-        "tools/Roslyn46/System.Net.Sockets.dll",
-        "tools/Roslyn46/System.Reflection.Metadata.dll",
-        "tools/Roslyn46/System.Runtime.InteropServices.RuntimeInformation.dll",
-        "tools/Roslyn46/System.Security.Cryptography.Algorithms.dll",
-        "tools/Roslyn46/System.Security.Cryptography.Encoding.dll",
-        "tools/Roslyn46/System.Security.Cryptography.Primitives.dll",
-        "tools/Roslyn46/System.Security.Cryptography.X509Certificates.dll",
-        "tools/Roslyn46/System.Text.Encoding.CodePages.dll",
-        "tools/Roslyn46/System.Threading.Tasks.Extensions.dll",
-        "tools/Roslyn46/System.ValueTuple.dll",
-        "tools/Roslyn46/System.Xml.ReaderWriter.dll",
-        "tools/Roslyn46/System.Xml.XPath.XDocument.dll",
-        "tools/Roslyn46/System.Xml.XPath.dll",
-        "tools/Roslyn46/System.Xml.XmlDocument.dll",
-        "tools/Roslyn46/VBCSCompiler.exe",
-        "tools/Roslyn46/VBCSCompiler.exe.config",
-        "tools/Roslyn46/csc.exe",
-        "tools/Roslyn46/csc.exe.config",
-        "tools/Roslyn46/csc.rsp",
-        "tools/Roslyn46/csi.exe",
-        "tools/Roslyn46/csi.exe.config",
-        "tools/Roslyn46/csi.rsp",
-        "tools/Roslyn46/vbc.exe",
-        "tools/Roslyn46/vbc.exe.config",
-        "tools/Roslyn46/vbc.rsp",
-        "tools/Roslyn472/Microsoft.Build.Tasks.CodeAnalysis.dll",
-        "tools/Roslyn472/Microsoft.CSharp.Core.targets",
-        "tools/Roslyn472/Microsoft.CodeAnalysis.CSharp.Scripting.dll",
-        "tools/Roslyn472/Microsoft.CodeAnalysis.CSharp.dll",
-        "tools/Roslyn472/Microsoft.CodeAnalysis.Scripting.dll",
-        "tools/Roslyn472/Microsoft.CodeAnalysis.VisualBasic.dll",
-        "tools/Roslyn472/Microsoft.CodeAnalysis.dll",
-        "tools/Roslyn472/Microsoft.DiaSymReader.Native.amd64.dll",
-        "tools/Roslyn472/Microsoft.DiaSymReader.Native.x86.dll",
-        "tools/Roslyn472/Microsoft.Managed.Core.targets",
-        "tools/Roslyn472/Microsoft.VisualBasic.Core.targets",
-        "tools/Roslyn472/System.Buffers.dll",
-        "tools/Roslyn472/System.Collections.Immutable.dll",
-        "tools/Roslyn472/System.Memory.dll",
-        "tools/Roslyn472/System.Numerics.Vectors.dll",
-        "tools/Roslyn472/System.Reflection.Metadata.dll",
-        "tools/Roslyn472/System.Runtime.CompilerServices.Unsafe.dll",
-        "tools/Roslyn472/System.Text.Encoding.CodePages.dll",
-        "tools/Roslyn472/System.Threading.Tasks.Extensions.dll",
-        "tools/Roslyn472/VBCSCompiler.exe",
-        "tools/Roslyn472/VBCSCompiler.exe.config",
-        "tools/Roslyn472/csc.exe",
-        "tools/Roslyn472/csc.exe.config",
-        "tools/Roslyn472/csc.rsp",
-        "tools/Roslyn472/csi.exe",
-        "tools/Roslyn472/csi.exe.config",
-        "tools/Roslyn472/csi.rsp",
-        "tools/Roslyn472/vbc.exe",
-        "tools/Roslyn472/vbc.exe.config",
-        "tools/Roslyn472/vbc.rsp",
-        "tools/net45/common.ps1",
-        "tools/net45/install.ps1",
-        "tools/net45/uninstall.ps1"
-      ]
-    },
     "Microsoft.CSharp/4.5.0": {
       "sha512": "kaj6Wb4qoMuH3HySFJhxwQfe8R/sJsNJnANrvv8WdFPMoNbKY5htfNscv+LHCu5ipz+49m2e+WQXpLXr9XYemQ==",
       "type": "package",
@@ -7765,22 +7573,6 @@
         "version.txt"
       ]
     },
-    "MySqlConnector/0.42.1": {
-      "sha512": "7jS8P+XOw+vS/reuwEEGhtAKvagiOEtOsu5/46Bnuiw+DgOjAFgMSojkiVaZi9DHcatP8jgmjY67iDGVZByQng==",
-      "type": "package",
-      "path": "mysqlconnector/0.42.1",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/net45/MySqlConnector.dll",
-        "lib/net461/MySqlConnector.dll",
-        "lib/netcoreapp2.1/MySqlConnector.dll",
-        "lib/netstandard1.3/MySqlConnector.dll",
-        "lib/netstandard2.0/MySqlConnector.dll",
-        "mysqlconnector.0.42.1.nupkg.sha512",
-        "mysqlconnector.nuspec"
-      ]
-    },
     "NETStandard.Library/2.0.3": {
       "sha512": "st47PosZSHrjECdjeIzZQbzivYBJFv6P2nv4cj2ypdI204DO+vZ7l5raGMiX4eXMJ53RfOIg+/s4DHVZ54Nu2A==",
       "type": "package",
@@ -7996,31 +7788,6 @@
         "lib/netstandard1.3/Pomelo.EntityFrameworkCore.Lolita.SqlServer.dll",
         "pomelo.entityframeworkcore.lolita.sqlserver.1.1.0.nupkg.sha512",
         "pomelo.entityframeworkcore.lolita.sqlserver.nuspec"
-      ]
-    },
-    "Pomelo.EntityFrameworkCore.MySql/2.1.1": {
-      "sha512": "V/W72zl2iWUWdSvj0c9chzssv9OUdSbEiEeOmP3D5Co5CbAtOiyyFwov0hVN+D/VNGhUQGszUltIWuoYEjTHhQ==",
-      "type": "package",
-      "path": "pomelo.entityframeworkcore.mysql/2.1.1",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/netstandard2.0/Pomelo.EntityFrameworkCore.MySql.dll",
-        "pomelo.entityframeworkcore.mysql.2.1.1.nupkg.sha512",
-        "pomelo.entityframeworkcore.mysql.nuspec"
-      ]
-    },
-    "Pomelo.JsonObject/1.1.1": {
-      "sha512": "erkYG/OW1LloSwDFGeS9MvVjy1FLmaV3k8GK/GMR8D3sSDEylZogoLdLiaOFc92+zTen92rG6XGiioNacSlg0A==",
-      "type": "package",
-      "path": "pomelo.jsonobject/1.1.1",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/net451/Pomelo.JsonObject.dll",
-        "lib/netstandard1.3/Pomelo.JsonObject.dll",
-        "pomelo.jsonobject.1.1.1.nupkg.sha512",
-        "pomelo.jsonobject.nuspec"
       ]
     },
     "Remotion.Linq/2.2.0": {
@@ -12877,7 +12644,6 @@
       "Microsoft.AspNetCore.Mvc >= 2.1.3",
       "Microsoft.AspNetCore.Razor.Design >= 2.1.2",
       "Microsoft.AspNetCore.StaticFiles >= 2.1.1",
-      "Microsoft.CodeDom.Providers.DotNetCompilerPlatform >= 3.6.0",
       "Microsoft.EntityFrameworkCore.Design >= 2.1.14",
       "Microsoft.EntityFrameworkCore.SqlServer >= 2.1.14",
       "Microsoft.EntityFrameworkCore.Tools >= 2.1.14",
@@ -12885,8 +12651,7 @@
       "Microsoft.NETCore.App >= 2.1.0",
       "Microsoft.VisualStudio.Web.BrowserLink >= 2.1.1",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 2.1.10",
-      "Pomelo.EntityFrameworkCore.Lolita.SqlServer >= 1.1.0",
-      "Pomelo.EntityFrameworkCore.MySql >= 2.1.1"
+      "Pomelo.EntityFrameworkCore.Lolita.SqlServer >= 1.1.0"
     ]
   },
   "packageFolders": {
@@ -12956,10 +12721,6 @@
             "target": "Package",
             "version": "[2.1.1, )"
           },
-          "Microsoft.CodeDom.Providers.DotNetCompilerPlatform": {
-            "target": "Package",
-            "version": "[3.6.0, )"
-          },
           "Microsoft.EntityFrameworkCore.Design": {
             "target": "Package",
             "version": "[2.1.14, )"
@@ -12995,10 +12756,6 @@
           "Pomelo.EntityFrameworkCore.Lolita.SqlServer": {
             "target": "Package",
             "version": "[1.1.0, )"
-          },
-          "Pomelo.EntityFrameworkCore.MySql": {
-            "target": "Package",
-            "version": "[2.1.1, )"
           }
         },
         "imports": [
@@ -13014,17 +12771,5 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'Microsoft.CodeDom.Providers.DotNetCompilerPlatform 3.6.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETCoreApp,Version=v2.1'. This package may not be fully compatible with your project.",
-      "libraryId": "Microsoft.CodeDom.Providers.DotNetCompilerPlatform",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v2.1"
-      ]
-    }
-  ]
+  }
 }

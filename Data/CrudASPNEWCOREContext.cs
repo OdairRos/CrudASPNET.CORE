@@ -9,11 +9,13 @@ namespace CrudASPNEW.CORE.Data
 {
     public class CrudASPNEWCOREContext : DbContext
     {
-        public CrudASPNEWCOREContext(DbContextOptions<CrudASPNEWCOREContext> options)
+        public CrudASPNEWCOREContext (DbContextOptions<CrudASPNEWCOREContext> options)
             : base(options)
         {
         }
 
-        public DbSet<Department> Department { get; set; }
+        public DbSet<Depa> Depa { get; set; }
+        public DbSet<Vendedor> vendedor { get; set; }
+        public DbSet<RecordeVendas> RecordeVendas { get; set; }
     }
 }

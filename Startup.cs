@@ -39,6 +39,7 @@ namespace CrudASPNEW.CORE
             services.AddDbContext<CrudASPNEWCOREContext>(options =>
                     options.UseSqlServer(Configuration.GetConnectionString("CrudASPNEWCOREContext")));
 
+            services.AddScoped<PopulaTabelaService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

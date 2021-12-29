@@ -10,22 +10,22 @@ using CrudASPNEW.CORE.Models;
 
 namespace CrudASPNEW.CORE.Controllers
 {
-    public class DepartmentsController : Controller
+    public class DepasController : Controller
     {
         private readonly CrudASPNEWCOREContext _context;
 
-        public DepartmentsController(CrudASPNEWCOREContext context)
+        public DepasController(CrudASPNEWCOREContext context)
         {
             _context = context;
         }
 
-        // GET: Departments
+        // GET: Depas
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Department.ToListAsync());
+            return View(await _context.Depa.ToListAsync());
         }
 
-        // GET: Departments/Details/5
+        // GET: Depas/Details/5
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
@@ -33,39 +33,39 @@ namespace CrudASPNEW.CORE.Controllers
                 return NotFound();
             }
 
-            var department = await _context.Department
+            var depa = await _context.Depa
                 .FirstOrDefaultAsync(m => m.Id == id);
-            if (department == null)
+            if (depa == null)
             {
                 return NotFound();
             }
 
-            return View(department);
+            return View(depa);
         }
 
-        // GET: Departments/Create
+        // GET: Depas/Create
         public IActionResult Create()
         {
             return View();
         }
 
-        // POST: Departments/Create
+        // POST: Depas/Create
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("id,nome")] Department department)
+        public async Task<IActionResult> Create([Bind("Id,Nome")] Depa depa)
         {
             if (ModelState.IsValid)
             {
-                _context.Add(department);
+                _context.Add(depa);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            return View(department);
+            return View(depa);
         }
 
-        // GET: Departments/Edit/5
+        // GET: Depas/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -73,35 +73,36 @@ namespace CrudASPNEW.CORE.Controllers
                 return NotFound();
             }
 
-            var department = await _context.Department.FindAsync(id);
-            if (department == null)
+            var depa = await _context.Depa.FindAsync(id);
+            if (depa == null)
             {
                 return NotFound();
             }
-            return View(department);
+            return View(depa);
         }
 
-        // POST: Departments/Edit/5
+        // POST: Depas/Edit/5
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("id,nome")] Department department)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Nome")] Depa depa)
         {
-            if (id != department.   Id)
+            if (id != depa.Id)
             {
                 return NotFound();
-            } 
+            }
+
             if (ModelState.IsValid)
             {
                 try
                 {
-                    _context.Update(department);
+                    _context.Update(depa);
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!DepartmentExists(department.Id))
+                    if (!DepaExists(depa.Id))
                     {
                         return NotFound();
                     }
@@ -112,10 +113,10 @@ namespace CrudASPNEW.CORE.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            return View(department);
+            return View(depa);
         }
 
-        // GET: Departments/Delete/5
+        // GET: Depas/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -123,30 +124,30 @@ namespace CrudASPNEW.CORE.Controllers
                 return NotFound();
             }
 
-            var department = await _context.Department
+            var depa = await _context.Depa
                 .FirstOrDefaultAsync(m => m.Id == id);
-            if (department == null)
+            if (depa == null)
             {
                 return NotFound();
             }
 
-            return View(department);
+            return View(depa);
         }
 
-        // POST: Departments/Delete/5
+        // POST: Depas/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var department = await _context.Department.FindAsync(id);
-            _context.Department.Remove(department);
+            var depa = await _context.Depa.FindAsync(id);
+            _context.Depa.Remove(depa);
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
-        private bool DepartmentExists(int id)
+        private bool DepaExists(int id)
         {
-            return _context.Department.Any(e => e.Id == id);
+            return _context.Depa.Any(e => e.Id == id);
         }
     }
 }
