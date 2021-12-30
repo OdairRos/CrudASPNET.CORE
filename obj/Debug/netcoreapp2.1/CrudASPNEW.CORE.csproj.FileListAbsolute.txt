@@ -79,4 +79,3 @@ C:\Users\desenv07\Documents\GitHub\CrudASPNET.CORE\obj\Debug\netcoreapp2.1\Razor
 C:\Users\desenv07\Documents\GitHub\CrudASPNET.CORE\obj\Debug\netcoreapp2.1\Razor\Views\Depas\Details.cshtml.g.cs
 C:\Users\desenv07\Documents\GitHub\CrudASPNET.CORE\obj\Debug\netcoreapp2.1\Razor\Views\Depas\Edit.cshtml.g.cs
 C:\Users\desenv07\Documents\GitHub\CrudASPNET.CORE\obj\Debug\netcoreapp2.1\Razor\Views\Depas\Index.cshtml.g.cs
-C:\Users\desenv07\Documents\GitHub\CrudASPNET.CORE\obj\Debug\netcoreapp2.1\CrudASPNEW.CORE.csproj.AssemblyReference.cache
