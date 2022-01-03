@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace CrudASPNEW.CORE.Migrations
 {
-    public partial class OtherEntities : Migration
+    public partial class OtherEntitites : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {

@@ -2,9 +2,11 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-
+using System.ComponentModel.DataAnnotations.Schema;
+using System.ComponentModel.DataAnnotations;
 namespace CrudASPNEW.CORE.Models
 {
+
     public class Depa
     {
         public int Id { get; set; }
@@ -15,7 +17,7 @@ namespace CrudASPNEW.CORE.Models
         public Depa()
         {
         }
-      
+
         public Depa(int id, string nome)
         {
             Id = id;
@@ -27,11 +29,13 @@ namespace CrudASPNEW.CORE.Models
             Vendedores.Add(vendedor);
         }
 
-        public double VendasTotais(DateTime inicial,DateTime final)
+        public double VendasTotais(DateTime inicial, DateTime final)
         {
             return Vendedores
                 .Sum(vendedor => vendedor
-                    .VendasTotais(inicial,final));
+                    .VendasTotais(inicial, final));
         }
+
+
     }
 }

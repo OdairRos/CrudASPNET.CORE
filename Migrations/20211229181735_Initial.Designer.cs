@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace CrudASPNEW.CORE.Migrations
 {
-    [DbContext(typeof(CrudASPNEWCOREContext))]
+    [DbContext(typeof(CrudASPNETCOREContext))]
     [Migration("20211229181735_Initial")]
     partial class Initial
     {

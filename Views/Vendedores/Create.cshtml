@@ -1,0 +1,42 @@
+﻿@model  CrudASPNET.CORE.Models.FormularioVendedorViewModel
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h2>@ViewData["title"]</h2>
+
+
+<hr />
+<div class="row">
+    <div class="col-md-4">
+
+        <form asp-action="Create">
+            <fieldset class="modal-title">Vendedor</fieldset>
+            <div class="form-group">
+                <label asp-for="vendedor.Name" class="control-label"></label>
+                <input asp-for="vendedor.Name" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label asp-for="vendedor.Email" class="control-label"></label>
+                <input asp-for="vendedor.Email" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label asp-for="vendedor.BirthDate" class="control-label"></label>
+                <input asp-for="vendedor.BirthDate" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label asp-for="vendedor.BaseSalary" class="control-label"></label>
+                <input asp-for="vendedor.BaseSalary" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label asp-for="vendedor.DepartmentId" class="control-label"></label>
+                <select asp-for="vendedor.DepartmentId" asp-items="@(new SelectList(Model.departamentos, "Id", "Nome"))" class="form-control"></select>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-default" />
+            </div>
+
+        </form>
+    </div>
+</div>

@@ -4,14 +4,16 @@ using CrudASPNEW.CORE.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace CrudASPNEW.CORE.Migrations
 {
     [DbContext(typeof(CrudASPNETCOREContext))]
-    partial class CrudASPNEWCOREContextModelSnapshot : ModelSnapshot
+    [Migration("20220103190710_DepartmenteForeignKey")]
+    partial class DepartmenteForeignKey
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

@@ -2,17 +2,21 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-
+using System.ComponentModel.DataAnnotations.Schema;
+using System.ComponentModel.DataAnnotations;
 namespace CrudASPNEW.CORE.Models
 {
     public class Vendedor
     {
+        
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
         public string Name { get; set; }
         public string Email { get; set; }
         public DateTime BirthDate { get; set; }
         public Double BaseSalary { get; set; }
         public Depa Department { get; set; }
+        public int DepartmentId { get; set; }
         public ICollection<RecordeVendas> Vendas { get; set; } = new List<RecordeVendas>();
 
         public Vendedor()
@@ -46,4 +50,4 @@ namespace CrudASPNEW.CORE.Models
                     .Sum(sr => sr.Quantia);
         }
     }
-} 
+}

@@ -7,14 +7,19 @@ using CrudASPNEW.CORE.Models;
 
 namespace CrudASPNEW.CORE.Data
 {
-    public class CrudASPNEWCOREContext : DbContext
+    public class CrudASPNETCOREContext : DbContext
     {
-        public CrudASPNEWCOREContext (DbContextOptions<CrudASPNEWCOREContext> options)
+        public CrudASPNETCOREContext (DbContextOptions<CrudASPNETCOREContext> options)
             : base(options)
         {
         }
 
-        public DbSet<Depa> Depa { get; set; }
+        public CrudASPNETCOREContext()
+        {
+
+        }
+
+        public DbSet<CrudASPNEW.CORE.Models.Depa> Depa { get; set; }
         public DbSet<Vendedor> vendedor { get; set; }
         public DbSet<RecordeVendas> RecordeVendas { get; set; }
     }

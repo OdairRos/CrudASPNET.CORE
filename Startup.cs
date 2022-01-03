@@ -11,6 +11,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using CrudASPNEW.CORE.Data;
+using CrudASPNET.CORE.Services;
 
 namespace CrudASPNEW.CORE
 {
@@ -35,11 +36,13 @@ namespace CrudASPNEW.CORE
 
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
-
-            services.AddDbContext<CrudASPNEWCOREContext>(options =>
+            services.AddScoped<PopulaTabelaService>();
+            services.AddScoped<VendedorService>();
+            services.AddScoped<DepartmentService>();
+            services.AddDbContext<CrudASPNETCOREContext>(options =>
                     options.UseSqlServer(Configuration.GetConnectionString("CrudASPNEWCOREContext")));
 
-            services.AddScoped<PopulaTabelaService>();
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

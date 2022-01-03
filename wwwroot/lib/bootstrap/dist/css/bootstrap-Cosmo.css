@@ -262,6 +262,9 @@ th {
     border: 1px solid #ddd !important;
   }
 }
+.borda {
+    border-radius: .6rem  !important;
+}
 @font-face {
   font-family: "Glyphicons Halflings";
   src: url("../fonts/glyphicons-halflings-regular.eot");

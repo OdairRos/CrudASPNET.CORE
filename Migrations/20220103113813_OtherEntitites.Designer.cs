@@ -9,9 +9,9 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace CrudASPNEW.CORE.Migrations
 {
-    [DbContext(typeof(CrudASPNEWCOREContext))]
-    [Migration("20211229201500_OtherEntities")]
-    partial class OtherEntities
+    [DbContext(typeof(CrudASPNETCOREContext))]
+    [Migration("20220103113813_OtherEntitites")]
+    partial class OtherEntitites
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

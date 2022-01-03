@@ -12,9 +12,9 @@ namespace CrudASPNEW.CORE.Controllers
 {
     public class DepasController : Controller
     {
-        private readonly CrudASPNEWCOREContext _context;
+        private readonly CrudASPNETCOREContext _context;
 
-        public DepasController(CrudASPNEWCOREContext context)
+        public DepasController(CrudASPNETCOREContext context)
         {
             _context = context;
         }

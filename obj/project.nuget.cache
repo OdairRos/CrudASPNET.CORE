@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "lVOrVcrKbdLrO2Yc8+WdX3FmooRNE0SA8UfJYwxKIEhX1hpT6xmYcZ3+H34uT0+PbpmxVduJ8min5HxoWF4csg==",
+  "dgSpecHash": "2BaLchKWWY4EhpCndN4CA/z8Aae8xlJF5WhE5s5PLUxULqxVmC8An2SZ74XsGrWmxSS/5dfnOgqDWaW3tpWFQQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\desenv07\\Documents\\GitHub\\CrudASPNET.CORE\\CrudASPNEW.CORE.csproj",
+  "projectFilePath": "C:\\Users\\desenv07\\Documents\\GitHub\\CrudASPNET.CORE\\CrudASPNET.CORE.csproj",
   "expectedPackageFiles": [
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.aspnet.webapi.client\\5.2.6\\microsoft.aspnet.webapi.client.5.2.6.nupkg.sha512",
     "C:\\Users\\desenv07\\.nuget\\packages\\microsoft.aspnetcore\\2.1.7\\microsoft.aspnetcore.2.1.7.nupkg.sha512",

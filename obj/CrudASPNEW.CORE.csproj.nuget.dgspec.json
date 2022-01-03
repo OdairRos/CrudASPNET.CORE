@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\desenv07\\Documents\\GitHub\\CrudASPNET.CORE\\CrudASPNEW.CORE.csproj": {}
+    "C:\\Users\\desenv07\\Desktop\\LeARNing by oDaIr\\Crud ASP.NET CORE\\CrudASPNEW.CORE\\CrudASPNEW.CORE.csproj": {}
   },
   "projects": {
-    "C:\\Users\\desenv07\\Documents\\GitHub\\CrudASPNET.CORE\\CrudASPNEW.CORE.csproj": {
+    "C:\\Users\\desenv07\\Desktop\\LeARNing by oDaIr\\Crud ASP.NET CORE\\CrudASPNEW.CORE\\CrudASPNEW.CORE.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\desenv07\\Documents\\GitHub\\CrudASPNET.CORE\\CrudASPNEW.CORE.csproj",
+        "projectUniqueName": "C:\\Users\\desenv07\\Desktop\\LeARNing by oDaIr\\Crud ASP.NET CORE\\CrudASPNEW.CORE\\CrudASPNEW.CORE.csproj",
         "projectName": "CrudASPNEW.CORE",
-        "projectPath": "C:\\Users\\desenv07\\Documents\\GitHub\\CrudASPNET.CORE\\CrudASPNEW.CORE.csproj",
+        "projectPath": "C:\\Users\\desenv07\\Desktop\\LeARNing by oDaIr\\Crud ASP.NET CORE\\CrudASPNEW.CORE\\CrudASPNEW.CORE.csproj",
         "packagesPath": "C:\\Users\\desenv07\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\desenv07\\Documents\\GitHub\\CrudASPNET.CORE\\obj\\",
+        "outputPath": "C:\\Users\\desenv07\\Desktop\\LeARNing by oDaIr\\Crud ASP.NET CORE\\CrudASPNEW.CORE\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

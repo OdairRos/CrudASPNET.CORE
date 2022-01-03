@@ -12661,9 +12661,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\desenv07\\Documents\\GitHub\\CrudASPNET.CORE\\CrudASPNEW.CORE.csproj",
-      "projectName": "CrudASPNEW.CORE",
-      "projectPath": "C:\\Users\\desenv07\\Documents\\GitHub\\CrudASPNET.CORE\\CrudASPNEW.CORE.csproj",
+      "projectUniqueName": "C:\\Users\\desenv07\\Documents\\GitHub\\CrudASPNET.CORE\\CrudASPNET.CORE.csproj",
+      "projectName": "CrudASPNET.CORE",
+      "projectPath": "C:\\Users\\desenv07\\Documents\\GitHub\\CrudASPNET.CORE\\CrudASPNET.CORE.csproj",
       "packagesPath": "C:\\Users\\desenv07\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\desenv07\\Documents\\GitHub\\CrudASPNET.CORE\\obj\\",
       "projectStyle": "PackageReference",
