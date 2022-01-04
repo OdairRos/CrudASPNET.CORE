@@ -8,16 +8,42 @@ namespace CrudASPNEW.CORE.Models
 {
     public class Vendedor
     {
-        
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
+
+       
+        [StringLength(60,MinimumLength =3, ErrorMessage ="O nome({0}) deve ser entre {2}-{1}.")]
+        [Display(Name="Nome")]
+        [Required(ErrorMessage = "Campo {0} Obrigatorio")]
         public string Name { get; set; }
+
+        
+        [Display(Name = "e-mail")]
+        [EmailAddress(ErrorMessage ="Digite um e-mail valido")]
+        [DataType(DataType.EmailAddress)]
+        [Required(ErrorMessage = "Campo {0} Obrigatorio")]
         public string Email { get; set; }
+
+
+        [Display(Name = "Data de aniversário")]
+        [DataType(DataType.Date)]
+        [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}")]
+        [Required(ErrorMessage = "Campo {0} Obrigatorio")]
         public DateTime BirthDate { get; set; }
+
+
+        [Range(100.0,10000000.00, ErrorMessage ="{0} Deve ser maior que {1}")]
+        [Display(Name="Salário base")]
+        [DisplayFormat(DataFormatString = "{0:F2}")]
+        [Required(ErrorMessage = "Campo {0} Obrigatorio")]
         public Double BaseSalary { get; set; }
+        
+
+        [Display(Name="Departamento")]
         public Depa Department { get; set; }
+
         public int DepartmentId { get; set; }
-        public ICollection<RecordeVendas> Vendas { get; set; } = new List<RecordeVendas>();
+        public ICollection<HistoricoVendas> Vendas { get; set; } = new List<HistoricoVendas>();
 
         public Vendedor()
         {
@@ -33,12 +59,13 @@ namespace CrudASPNEW.CORE.Models
             Department = department;
         }
 
-        public void AddVendas(RecordeVendas Rv)
+        #region Methods
+        public void AddVendas(HistoricoVendas Rv)
         {
             Vendas.Add(Rv);
         }
 
-        public void RemoveVendas(RecordeVendas Rv)
+        public void RemoveVendas(HistoricoVendas Rv)
         {
             Vendas.Remove(Rv);
         }
@@ -49,5 +76,6 @@ namespace CrudASPNEW.CORE.Models
                     .Where(sr => sr.Data >= initial && sr.Data <= final)
                     .Sum(sr => sr.Quantia);
         }
+        #endregion
     }
 }

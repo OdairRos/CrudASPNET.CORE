@@ -1,7 +1,8 @@
-﻿@model  CrudASPNET.CORE.Models.FormularioVendedorViewModel
+﻿
+@model CrudASPNET.CORE.Models.FormularioVendedorViewModel
 
 @{
-    ViewData["Title"] = "Create";
+    ViewData["Title"] = "Editar";
 }
 
 <h2>@ViewData["title"]</h2>
@@ -11,7 +12,8 @@
 <div class="row">
     <div class="col-md-4">
 
-        <form asp-action="Create">
+        <form asp-action="Edit">
+            <input type="hidden" asp-for="vendedor.Id" />
             <fieldset class="modal-title">Vendedor</fieldset>
             <div class="form-group">
                 <label asp-for="vendedor.Name" class="control-label"></label>
@@ -39,12 +41,12 @@
                 <span asp-validation-for="vendedor.DepartmentId" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-default" />
+                <input type="submit" value="Save" class="btn btn-default" />
+                <a asp-action="Index">Voltar</a>
             </div>
         </form>
     </div>
 </div>
-
-@section Scripts{ 
+@section Scripts{
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
 }

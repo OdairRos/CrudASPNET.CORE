@@ -21,6 +21,6 @@ namespace CrudASPNEW.CORE.Data
 
         public DbSet<CrudASPNEW.CORE.Models.Depa> Depa { get; set; }
         public DbSet<Vendedor> vendedor { get; set; }
-        public DbSet<RecordeVendas> RecordeVendas { get; set; }
+        public DbSet<HistoricoVendas> RecordeVendas { get; set; }
     }
 }

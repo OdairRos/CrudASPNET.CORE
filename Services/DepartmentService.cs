@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using CrudASPNEW.CORE.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace CrudASPNET.CORE.Services
 {
@@ -16,9 +17,9 @@ namespace CrudASPNET.CORE.Services
             __Context = cotext;
         }
         
-        public List<Depa> FindAll()
+        public async Task<List<Depa>> FindAllAsync()
         {
-            return __Context.Depa.OrderBy(x => x.Nome).ToList();
+            return await __Context.Depa.OrderBy(x => x.Nome).ToListAsync();
         }
     }
 }
