@@ -7,9 +7,9 @@
 
 ### Prints da aplicação
 
-![Test Image 2](“https://github.com/OdairRos/CrudASPNET.CORE/blob/main/img/img1-PrintApp.png”)<br>
-![Test Image 2](“https://github.com/OdairRos/CrudASPNET.CORE/blob/main/img/img2-PrintApp..png”)<br>
-![Test Image 2](“https://github.com/OdairRos/CrudASPNET.CORE/blob/main/img/img3-PrintApp..png”)
+![Test Image 2](https://github.com/OdairRos/CrudASPNET.CORE/blob/main/img/img1-PrintApp.png)<br>
+![Test Image 2](https://github.com/OdairRos/CrudASPNET.CORE/blob/main/img/img2-PrintApp..png)<br>
+![Test Image 2](https://github.com/OdairRos/CrudASPNET.CORE/blob/main/img/img3-PrintApp..png)
 
 ### 🛠 Tecnologias
 
