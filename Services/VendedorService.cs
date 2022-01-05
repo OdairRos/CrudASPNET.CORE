@@ -61,13 +61,12 @@ namespace CrudASPNET.CORE.Services
             try
             {
                 var obj = await __Context.vendedor.FindAsync(id);
-                if (__Context.vendedor.Contains(obj))
-                    throw new IntegrityException("Vendedor não pode ser deletado;Possui vendas.");
+
                 __Context.vendedor.Remove(obj);
                 await DeleteValueAsync(obj.Id);
  
             }
-            catch (DbUpdateException e)
+            catch (Exception e)
             {
                 throw new IntegrityException(e.Message);
             }

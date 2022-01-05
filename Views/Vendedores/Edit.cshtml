@@ -13,32 +13,32 @@
     <div class="col-md-4">
 
         <form asp-action="Edit">
-            <input type="hidden" asp-for="vendedor.Id" />
+            <input type="hidden" asp-for="Vendedor.Id" />
             <fieldset class="modal-title">Vendedor</fieldset>
             <div class="form-group">
-                <label asp-for="vendedor.Name" class="control-label"></label>
-                <input asp-for="vendedor.Name" class="form-control" />
-                <span asp-validation-for="vendedor.Name" class="text-danger"></span>
+                <label asp-for="Vendedor.Name" class="control-label"></label>
+                <input asp-for="Vendedor.Name" class="form-control" />
+                <span asp-validation-for="Vendedor.Name" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="vendedor.Email" class="control-label"></label>
-                <input asp-for="vendedor.Email" class="form-control" />
-                <span asp-validation-for="vendedor.Email" class="text-danger"></span>
+                <label asp-for="Vendedor.Email" class="control-label"></label>
+                <input asp-for="Vendedor.Email" class="form-control" />
+                <span asp-validation-for="Vendedor.Email" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="vendedor.BirthDate" class="control-label"></label>
-                <input asp-for="vendedor.BirthDate" class="form-control" />
-                <span asp-validation-for="vendedor.BirthDate" class="text-danger"></span>
+                <label asp-for="Vendedor.BirthDate" class="control-label"></label>
+                <input asp-for="Vendedor.BirthDate" class="form-control" />
+                <span asp-validation-for="Vendedor.BirthDate" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="vendedor.BaseSalary" class="control-label"></label>
-                <input asp-for="vendedor.BaseSalary" class="form-control" />
-                <span asp-validation-for="vendedor.BaseSalary" class="text-danger"></span>
+                <label asp-for="Vendedor.BaseSalary" class="control-label"></label>
+                <input asp-for="Vendedor.BaseSalary" class="form-control" />
+                <span asp-validation-for="Vendedor.BaseSalary" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="vendedor.DepartmentId" class="control-label"></label>
-                <select asp-for="vendedor.DepartmentId" asp-items="@(new SelectList(Model.departamentos, "Id", "Nome"))" class="form-control"></select>
-                <span asp-validation-for="vendedor.DepartmentId" class="text-danger"></span>
+                <label asp-for="Vendedor.DepartmentId" class="control-label"></label>
+                <select asp-for="Vendedor.DepartmentId" asp-items="@(new SelectList(Model.Departamentos, "Id", "Nome"))" class="form-control"></select>
+                <span asp-validation-for="Vendedor.DepartmentId" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <input type="submit" value="Save" class="btn btn-default" />

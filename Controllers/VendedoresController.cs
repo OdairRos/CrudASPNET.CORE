@@ -33,7 +33,7 @@ namespace CrudASPNET.CORE.Controllers
         public async Task<IActionResult> Create()
         {
             var departments = await __DepartamentoServico.FindAllAsync();
-            var viewModel = new FormularioVendedorViewModel { departamentos = departments };
+            var viewModel = new FormularioVendedorViewModel { Departamentos = departments };
             return View(viewModel);
         }
 
@@ -64,8 +64,8 @@ namespace CrudASPNET.CORE.Controllers
 
             FormularioVendedorViewModel viewModel = new FormularioVendedorViewModel
             {
-                vendedor = vendedor,
-                departamentos = departamento
+                Vendedor = vendedor,
+                Departamentos = departamento
             };
             return View(viewModel);
         }
@@ -92,8 +92,8 @@ namespace CrudASPNET.CORE.Controllers
             if (!ModelState.IsValid) {
                 var viewModel = new FormularioVendedorViewModel
                 {
-                    vendedor = vendedor,
-                    departamentos = await __DepartamentoServico.FindAllAsync()
+                    Vendedor = vendedor,
+                    Departamentos = await __DepartamentoServico.FindAllAsync()
                 };
                 return View(viewModel);
             }
@@ -128,8 +128,8 @@ namespace CrudASPNET.CORE.Controllers
                 if (!ModelState.IsValid)
                 {
                     var viewModel = new FormularioVendedorViewModel { 
-                        vendedor = vendedor, 
-                        departamentos = await __DepartamentoServico.FindAllAsync() };
+                        Vendedor = vendedor, 
+                        Departamentos = await __DepartamentoServico.FindAllAsync() };
 
                     return View(viewModel);
                 }

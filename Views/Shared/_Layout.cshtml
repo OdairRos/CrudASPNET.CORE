@@ -1,5 +1,5 @@
-﻿<!DOCTYPE html>
-<html>
+﻿<!DOCTYPE html >
+<html lang="pt-br">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -16,7 +16,7 @@
         <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
     </environment>
 </head>
-<body class="bg-body text-body">
+<body class="text-body">
     <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
@@ -34,8 +34,7 @@
                     <li><a asp-controller="Depas" asp-action="Index">Departamentos</a></li>
                     <li><a asp-controller="Vendedores" asp-action="Index">Vendedores</a></li>
                     <li><a asp-controller="HistoricoVendas" asp-action="Index">Vendas</a></li>
-                    <li><a asp-controller="Home" asp-action="About">About</a></li>
-                    <li><a asp-controller="Home" asp-action="Contact">Contact</a></li>
+                    <li><a asp-controller="Home" asp-action="About">Sobre</a></li>
                 </ul>
             </div>
         </div>
@@ -46,8 +45,8 @@
     <div class="container body-content">
         @RenderBody()
         <hr />
-        <footer>
-            <p>&copy; 2021 - Crud ASPNET.CORE</p>
+        <footer class="modal-footer" >
+            <p>&copy; 2021 - Odair J, Crud ASPNET.CORE</p>
         </footer>
     </div>
 

@@ -1,14 +1,14 @@
 ﻿@model CrudASPNEW.CORE.Models.Depa
 
 @{
-    ViewData["Title"] = "Delete";
+    ViewData["Title"] = "Deletar";
 }
 
-<h2>Delete</h2>
 
-<h3>Are you sure you want to delete this?</h3>
+
+<h3>Você deseja apagar este registro?</h3>
 <div>
-    <h4>Depa</h4>
+    <h2>Deletar</h2>
     <hr />
     <dl class="dl-horizontal">
         <dt>
@@ -21,7 +21,7 @@
     
     <form asp-action="Delete">
         <input type="hidden" asp-for="Id" />
-        <input type="submit" value="Delete" class="btn btn-default" /> |
+        <input type="submit" value="Deletar" class="btn btn-default" /> |
         <a asp-action="Index">Voltar</a>
     </form>
 </div>

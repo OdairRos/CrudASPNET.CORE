@@ -8,7 +8,7 @@ namespace CrudASPNET.CORE.Models
 {
     public class FormularioVendedorViewModel
     {
-        public Vendedor vendedor { get; set; }
-        public ICollection<Depa> departamentos { get; set; }
+        public Vendedor Vendedor { get; set; }
+        public ICollection<Depa> Departamentos { get; set; }
     }
 }

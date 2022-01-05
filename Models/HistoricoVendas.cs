@@ -13,6 +13,7 @@ namespace CrudASPNEW.CORE.Models
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
 
+       
         [DisplayFormat(DataFormatString ="{0:dd/MM/yyyy}")]
         public DateTime Data { get; set; }
 
@@ -32,6 +33,7 @@ namespace CrudASPNEW.CORE.Models
             Quantia = quantia;
             Status = status;
             this.Vendedor = vendedor;
+            Console.WriteLine("dsad");
         }
     }
 }

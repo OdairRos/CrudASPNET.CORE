@@ -1,12 +1,12 @@
 ﻿@model CrudASPNEW.CORE.Models.Depa
 
 @{
-    ViewData["Title"] = "Create";
+    ViewData["Title"] = "Criar";
 }
 
-<h2>Create</h2>
 
-<h4>Depa</h4>
+
+<h2>@ViewData["title"]</h2>
 <hr />
 <div class="row">
     <div class="col-md-4">
@@ -18,14 +18,14 @@
                 <span asp-validation-for="Nome" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-default" />
+                <input type="submit" value="Criar" class="btn btn-default" />
             </div>
         </form>
     </div>
 </div>
 
 <div>
-    <a asp-action="Index">Back to List</a>
+    <a asp-action="Index">Voltar</a>
 </div>
 
 @section Scripts {
